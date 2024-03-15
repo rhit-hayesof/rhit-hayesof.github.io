@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 :root{
   --vertical-space: 2rem;
-  --horizontal-space: 2rem;  
+  --horizontal-space: 2rem;
+  --light-color:#A69F95; 
+  --body-color:#000000;
+  --heading-color:#606B73;
+  --contrast-color:#7A7A7A;
 }
 
 
@@ -9,13 +13,32 @@ body {
     font-size : 18px;
     line-height : 1.5;
     font-family: 'Lato', sans-serif;
+    background-image: radial-gradient(circle at center right, rgb(138, 138, 138),rgb(251, 251, 251));
+    color: var(--body-color);
+}
+/* For a dark background, with a light middle ground and dark text */
+main {
+    /* background-color: var(--light-color); */
+}
+
+header h1, nav, nav a {
+    color: var(--body-color);
 }
 
 h1, h2, h3 {
     line-height : 1.2;
     font-family: 'Lato', cursive;
+    color: var(--heading-color);
 }
 
+a {
+    color: var(--body-color);
+    text-decoration-color: var(--contrast-color);
+}
+
+a:hover {
+    color: var(--contrast-color);
+}
 
 body#about img {height : 15em; width : 7.5em;}
 
